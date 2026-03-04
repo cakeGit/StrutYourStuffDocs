@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Strut Your Stuff"
   text: ""
-  tagline: Strut block API for Create add-ons with collision, clipping, and Flywheel-ready rendering.
+  tagline: Strut block API for all mods with collision, clipping, and (optional) Flywheel-ready rendering.
   actions:
     - theme: brand
       text: Get Started
