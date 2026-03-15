@@ -134,4 +134,4 @@ public static class ClientEvents {
 }
 ```
 
-> If Flywheel is not present, omit the call to `FlywheelCompatLoader.registerStrutVisual`.
+> If you do not want optional Flywheel compatability (which can significantly improve performance), just omit the call to `FlywheelCompatLoader.registerStrutVisual`.
