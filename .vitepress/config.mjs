@@ -135,17 +135,18 @@ function basenameWithoutExt(fullPath) {
 const sidebar = buildSidebar();
 
 export default defineConfig({
-  title: "Azimuth",
-  description: "Documentation of the Azimuth library",
+  title: "Strut Your Stuff",
+  description: "Documentation of the Strut Your Stuff library",
   themeConfig: {
     nav: [
       { text: 'home', link: '/' },
+      { text: 'javadoc', link: 'https://struts-jdoc.azmod.net/' },
     ],
 
     sidebar: sidebar,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/Industrialists-Of-Create/AzimuthDocs' }
+      { icon: 'github', link: 'https://github.com/cakeGit/StrutYourStuff' }
     ]
   },
   srcDir: 'docs',
