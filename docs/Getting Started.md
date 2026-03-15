@@ -4,20 +4,15 @@ Strut Your Stuff is a library for strut blocks that span between two anchor poin
 
 ## Dependency setup
 
-Add the Aztech Maven repository to `build.gradle`:
+Depending on your project's scope, you can include Strut Your Stuff as either an external or internal dependency.
 
-```groovy
-repositories {
-    maven { // Aztech Maven, home of Strut Your Stuff
-        name = "Aztech Maven"
-        url = "https://maven.azmod.net/releases"
-    }
-}
-```
+### External Dependency (Preferred)
 
-### External dependency
+Versions can be found on [CurseForge](#) and [Modrinth](#).
 
-Add the dependency to `build.gradle`:
+It is recommended to use Strut Your Stuff as a standard external dependency. This approach ensures you automatically get fixes and improvements, reduces overhead, and helps give credit to the library.
+
+In your `build.gradle` dependencies:
 
 ```groovy
 dependencies {
@@ -25,7 +20,7 @@ dependencies {
 }
 ```
 
-Declare the dependency in `neoforge.mods.toml`:
+You'll also need to declare it as a dependency in your `neoforge.mods.toml`:
 
 ```toml
 [[dependencies.yourmodid]]
@@ -36,9 +31,13 @@ Declare the dependency in `neoforge.mods.toml`:
     side = "BOTH"
 ```
 
-### Internal dependency (jar-in-jar)
+### Internal Dependency (With Jar-In-Jar)
 
-Use jar-in-jar to ship a single mod jar:
+Versions can be found on [CurseForge](#) and [Modrinth](#).
+
+If you just want a no-fuss, clean single JAR and don't want to make your users download an extra file, using jar-in-jar is totally fine. (Especially for non-create addons, this library is less likely to be used by multiple mods).
+
+Use both `implementation` and `jarJar` to include it directly within your compiled mod:
 
 ```groovy
 dependencies {
