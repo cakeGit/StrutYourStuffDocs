@@ -33,7 +33,7 @@ You'll also need to declare it as a dependency in your `neoforge.mods.toml`:
 
 ### Internal Dependency (With Jar-In-Jar)
 
-Versions can be found on [CurseForge](#) and [Modrinth](#).
+Versions can be found on [CurseForge](https://www.curseforge.com/minecraft/mc-mods/strut-your-stuff/files/all?page=1&pageSize=20&showAlphaFiles=hide) and [Modrinth](https://modrinth.com/mod/strut-your-stuff/versions).
 
 If you just want a no-fuss, clean single JAR and don't want to make your users download an extra file, using jar-in-jar is totally fine. (Especially for non-create addons, this library is less likely to be used by multiple mods).
 
